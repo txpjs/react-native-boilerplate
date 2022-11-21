@@ -5,6 +5,9 @@
   "main": "node_modules/expo/AppEntry.js",
   "scripts": {
     "android": "expo start --android",
+    "eas:build": "eas build -p all --profile preview",
+    "eas:login": "eas login",
+    "eas:whoami": "eas whoami",
     "ios": "expo start --ios",
     "start": "expo start",
     "test": "jest --watchAll",
@@ -38,6 +41,7 @@
     "@babel/core": "^7.12.9",
     "@types/react": "~18.0.24",
     "@types/react-native": "~0.70.6",
+    "eas-cli": "^0.57.0",
     "jest": "^26.6.3",
     "jest-expo": "~47.0.1",
     "react-test-renderer": "18.1.0",
