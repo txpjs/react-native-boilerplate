@@ -14,8 +14,8 @@ import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
 import ModalScreen from '../pages/ModalScreen';
 import NotFoundScreen from '../pages/NotFoundScreen';
-import TabOneScreen from '../pages/TabOneScreen';
-import TabTwoScreen from '../pages/TabTwoScreen';
+import WelcomeScreen from '../pages/WelcomeScreen';
+import UIScreen from '../pages/UIScreen';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -56,15 +56,15 @@ function BottomTabNavigator() {
 
   return (
     <BottomTab.Navigator
-      initialRouteName="TabOne"
+      initialRouteName="Welcome"
       screenOptions={{
         tabBarActiveTintColor: Colors[colorScheme].tint,
       }}>
       <BottomTab.Screen
-        name="TabOne"
-        component={TabOneScreen}
-        options={({ navigation }: RootTabScreenProps<'TabOne'>) => ({
-          title: 'Tab One',
+        name="Welcome"
+        component={WelcomeScreen}
+        options={({ navigation }: RootTabScreenProps<'Welcome'>) => ({
+          title: 'Welcome',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
           headerRight: () => (
             <Pressable
@@ -78,10 +78,10 @@ function BottomTabNavigator() {
         })}
       />
       <BottomTab.Screen
-        name="TabTwo"
-        component={TabTwoScreen}
+        name="UI"
+        component={UIScreen}
         options={{
-          title: 'Tab Two',
+          title: 'UI',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
         }}
       />

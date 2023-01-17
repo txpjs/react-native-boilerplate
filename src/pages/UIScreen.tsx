@@ -1,15 +1,18 @@
 import { StyleSheet } from 'react-native';
+import { Button } from 'native-base';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
 
-export default function TabOneScreen({ navigation }: RootTabScreenProps<'TabOne'>) {
+export default function UIScreen() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hi! Welcome to taia!</Text>
+      <Text style={styles.title}>UI example</Text>
+
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/src/pages/TabOneScreen.tsx" />
+      <Button shadow={2} onPress={() => console.log('hello world')}>
+        Click me
+      </Button>
     </View>
   );
 }

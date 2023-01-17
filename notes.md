@@ -1,5 +1,10 @@
 # myapp
 
+## 待办优化
+
+1. 包分析
+2. ui 例子多来点
+
 ## 初始化 myapp
 
 app.json 的 name、slug 字段初始化，package 的 name 字段初始化
@@ -97,3 +102,22 @@ eas 配置
 ```
 
 ## ui 使用
+
+按照 native-base 包，这个依赖 react-native-svg 包，所以需要装两个包
+yarn add native-base
+expo install react-native-svg@13.4.0
+
+首页添加代码
+
+```js
+import React from 'react';
+import { NativeBaseProvider, Box } from 'native-base';
+
+export default function App() {
+  return (
+    <NativeBaseProvider>
+      <Box>Hello world</Box>
+    </NativeBaseProvider>
+  );
+}
+```

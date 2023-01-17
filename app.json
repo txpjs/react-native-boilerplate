@@ -15,7 +15,9 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": ["**/*"],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
       "supportsTablet": true,
       "bundleIdentifier": "com.txp1035.myapp"
@@ -29,6 +31,11 @@
     },
     "web": {
       "favicon": "./public/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c173e6a5-fe9d-4581-aaa8-ecc2e46aa3fa"
+      }
     }
   }
 }
