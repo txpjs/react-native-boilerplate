@@ -1,6 +1,6 @@
-# BFT
+# myapp
 
-## 初始化 BFT
+## 初始化 myapp
 
 app.json 的 name、slug 字段初始化，package 的 name 字段初始化
 
@@ -63,10 +63,10 @@ app.json 增加配置
 
 ```json
 "ios": {
-  "bundleIdentifier": "com.txp1035.BFT"
+  "bundleIdentifier": "com.txp1035.myapp"
 },
 "android": {
-  "package": "com.txp1035.BFT"
+  "package": "com.txp1035.myapp"
 },
 ```
 

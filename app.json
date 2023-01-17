@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BFT",
-    "slug": "BFT",
+    "name": "myapp",
+    "slug": "myapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./public/images/icon.png",
@@ -18,14 +18,14 @@
     "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.txp1035.BFT"
+      "bundleIdentifier": "com.txp1035.myapp"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./public/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.txp1035.BFT"
+      "package": "com.txp1035.myapp"
     },
     "web": {
       "favicon": "./public/images/favicon.png"

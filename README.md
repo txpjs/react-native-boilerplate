@@ -1,4 +1,4 @@
-# BFT
+# react-native-boilerplate
 
 ## web 常用目录
 
