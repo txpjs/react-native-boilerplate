@@ -25,6 +25,11 @@ const linking: LinkingOptions<RootStackParamList> = {
               UI: 'two',
             },
           },
+          DataBase: {
+            screens: {
+              DataBase: 'three',
+            },
+          },
         },
       },
       Modal: 'modal',

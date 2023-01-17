@@ -19,6 +19,7 @@ import Modal from '../pages/Modal';
 import NotFound from '../pages/NotFound';
 import Home from '../pages/Home';
 import UI from '../pages/UI';
+import DataBase from '../pages/DataBase';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -85,6 +86,14 @@ function BottomTabNavigator() {
         component={UI}
         options={{
           title: 'UI',
+          tabBarIcon: ({ color }) => <Ionicons size={24} name="color-palette" color={color} />,
+        }}
+      />
+      <BottomTab.Screen
+        name="DataBase"
+        component={DataBase}
+        options={{
+          title: 'DataBase',
           tabBarIcon: ({ color }) => <Ionicons size={24} name="color-palette" color={color} />,
         }}
       />

@@ -1,7 +1,6 @@
 import { StyleSheet } from 'react-native';
 import { Button } from 'native-base';
 
-import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 
 export default function UI() {
