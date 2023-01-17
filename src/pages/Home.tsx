@@ -4,12 +4,12 @@ import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
 import { RootTabScreenProps } from '../types';
 
-export default function Welcome({ navigation }: RootTabScreenProps<'Welcome'>) {
+export default function Home({ navigation }: RootTabScreenProps<'Home'>) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hi! Welcome to taia!</Text>
+      <Text style={styles.title}>Hi! Home to taia!</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/src/pages/Welcome.tsx" />
+      <EditScreenInfo path="/src/pages/Home.tsx" />
     </View>
   );
 }
