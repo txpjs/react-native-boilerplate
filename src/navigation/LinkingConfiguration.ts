@@ -17,12 +17,12 @@ const linking: LinkingOptions<RootStackParamList> = {
         screens: {
           Welcome: {
             screens: {
-              WelcomeScreen: 'one',
+              Welcome: 'one',
             },
           },
           UI: {
             screens: {
-              UIScreen: 'two',
+              UI: 'two',
             },
           },
         },

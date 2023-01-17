@@ -12,10 +12,10 @@ import { ColorSchemeName, Pressable } from 'react-native';
 
 import Colors from '../constants/Colors';
 import useColorScheme from '../hooks/useColorScheme';
-import ModalScreen from '../pages/ModalScreen';
-import NotFoundScreen from '../pages/NotFoundScreen';
-import WelcomeScreen from '../pages/WelcomeScreen';
-import UIScreen from '../pages/UIScreen';
+import Modal from '../pages/Modal';
+import NotFound from '../pages/NotFound';
+import Welcome from '../pages/Welcome';
+import UI from '../pages/UI';
 import { RootStackParamList, RootTabParamList, RootTabScreenProps } from '../types';
 import LinkingConfiguration from './LinkingConfiguration';
 
@@ -37,9 +37,9 @@ function RootNavigator() {
   return (
     <Stack.Navigator>
       <Stack.Screen name="Root" component={BottomTabNavigator} options={{ headerShown: false }} />
-      <Stack.Screen name="NotFound" component={NotFoundScreen} options={{ title: 'Oops!' }} />
+      <Stack.Screen name="NotFound" component={NotFound} options={{ title: 'Oops!' }} />
       <Stack.Group screenOptions={{ presentation: 'modal' }}>
-        <Stack.Screen name="Modal" component={ModalScreen} />
+        <Stack.Screen name="Modal" component={Modal} />
       </Stack.Group>
     </Stack.Navigator>
   );
@@ -62,7 +62,7 @@ function BottomTabNavigator() {
       }}>
       <BottomTab.Screen
         name="Welcome"
-        component={WelcomeScreen}
+        component={Welcome}
         options={({ navigation }: RootTabScreenProps<'Welcome'>) => ({
           title: 'Welcome',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,
@@ -79,7 +79,7 @@ function BottomTabNavigator() {
       />
       <BottomTab.Screen
         name="UI"
-        component={UIScreen}
+        component={UI}
         options={{
           title: 'UI',
           tabBarIcon: ({ color }) => <TabBarIcon name="code" color={color} />,

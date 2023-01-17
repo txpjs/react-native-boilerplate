@@ -1,15 +1,18 @@
-import { StyleSheet } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
+import { Platform, StyleSheet } from 'react-native';
 
 import EditScreenInfo from '../components/EditScreenInfo';
 import { Text, View } from '../components/Themed';
-import { RootTabScreenProps } from '../types';
 
-export default function WelcomeScreen({ navigation }: RootTabScreenProps<'Welcome'>) {
+export default function Modal() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Hi! Welcome to taia!</Text>
+      <Text style={styles.title}>Modal</Text>
       <View style={styles.separator} lightColor="#eee" darkColor="rgba(255,255,255,0.1)" />
-      <EditScreenInfo path="/src/pages/WelcomeScreen.tsx" />
+      <EditScreenInfo path="/screens/Modal.tsx" />
+
+      {/* Use a light status bar on iOS to account for the black space above the modal */}
+      <StatusBar style={Platform.OS === 'ios' ? 'light' : 'auto'} />
     </View>
   );
 }
