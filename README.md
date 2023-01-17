@@ -1,6 +1,14 @@
 # react-native-boilerplate
 
-An out-of-box UI solution for solid applications as a React Native boilerplate.
+An out-of-box UI solution for solid applications as a React Native boilerplate.3
+
+## 特色和基本能力
+
+1. web 通用目录结构
+2. 跨平台打包能力开箱即用
+3. tabs 示例、modal 示例
+4. 开箱即用的数据库能力
+5. 开箱即用的 UI
 
 ## web 常用目录
 
@@ -34,3 +42,7 @@ An out-of-box UI solution for solid applications as a React Native boilerplate.
 tabs 切换页面例子
 modal 切换页面例子
 404 例子
+
+## ui
+
+native-base
