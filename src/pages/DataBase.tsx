@@ -35,7 +35,6 @@ export default function DataBase() {
         onPress={() => {
           example.create({
             callback: () => {
-              console.log('add');
               setAllData(setList);
             },
             params: {
@@ -43,7 +42,7 @@ export default function DataBase() {
             },
           });
         }}>
-        add
+        add data
       </Button>
       <Flex direction="row">
         <Input w="30%" value={listId} onChangeText={setListId} placeholder="Enter your id" />
@@ -60,7 +59,7 @@ export default function DataBase() {
             },
           });
         }}>
-        edit
+        edit data
       </Button>
       <SectionList<Example & { id: string }, { title: string; Example: Example & { id: string }[] }>
         bg="amber.100"
@@ -122,8 +121,12 @@ const styles = StyleSheet.create({
   // },
   container: {},
   title: {
-    fontSize: 20,
+    display: 'flex',
+    fontSize: 30,
     fontWeight: 'bold',
+    height: 50,
+    lineHeight: 50,
+    textAlign: 'center',
   },
   separator: {
     marginVertical: 30,
