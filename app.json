@@ -1,36 +1,39 @@
 {
   "expo": {
-    "name": "rnapp",
-    "slug": "rnapp",
+    "name": "BFT",
+    "slug": "BFT",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./public/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./assets/images/splash.png",
+      "image": "./public/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.txp1035.rnapp"
+      "bundleIdentifier": "com.txp1035.BFT"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./public/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
-      "package": "com.txp1035.rnapp"
+      "package": "com.txp1035.BFT"
     },
     "web": {
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./public/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "1a7169ee-2b98-4a31-9473-3d0b4390798b"
+      }
     }
   }
 }
