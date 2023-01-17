@@ -1,5 +1,7 @@
 # react-native-boilerplate
 
+An out-of-box UI solution for solid applications as a React Native boilerplate.
+
 ## web 常用目录
 
 和 umi 目录一样，一样的目录结构让你更容易使用
