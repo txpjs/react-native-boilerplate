@@ -51,7 +51,7 @@ app.json 的 name、slug 字段初始化，package 的 name 字段初始化
 hooks navigation constants components screens APP.tsx types.tsx 移动到 src
 APP.tsx 文件内容改成引用 src 内容
 screens 改成 pages
-assets 改 public ，对应 app.json 的 assets 名也改成 public
+assets 改 assets ，对应 app.json 的 assets 名也改成 assets
 space-mono 错误，搜素修改目录路径
 
 ## 增加线上打包能力

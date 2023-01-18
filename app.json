@@ -4,11 +4,11 @@
     "slug": "myapp",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./public/images/icon.png",
+    "icon": "./src/assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "splash": {
-      "image": "./public/images/splash.png",
+      "image": "./src/assets/images/splash.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -22,13 +22,18 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./public/images/adaptive-icon.png",
+        "foregroundImage": "./src/assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.txp1035.myapp"
     },
     "web": {
-      "favicon": "./public/images/favicon.png"
+      "favicon": "./src/assets/images/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "c173e6a5-fe9d-4581-aaa8-ecc2e46aa3fa"
+      }
     }
   }
 }
