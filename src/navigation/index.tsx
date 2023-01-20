@@ -6,7 +6,8 @@
 /**
  *  You can explore the built-in icon families and icons on the web at https://icons.expo.fyi/
  */
-import { Ionicons, MaterialIcons, FontAwesome } from '@expo/vector-icons';
+import { Ionicons, FontAwesome, Entypo } from '@expo/vector-icons';
+
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { NavigationContainer, DefaultTheme, DarkTheme } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
@@ -69,7 +70,7 @@ function BottomTabNavigator() {
         component={Home}
         options={({ navigation }: RootTabScreenProps<'Home'>) => ({
           title: 'Home',
-          tabBarIcon: ({ color }) => <MaterialIcons size={24} name="home" color={color} />,
+          tabBarIcon: ({ color }) => <Entypo size={24} name="home" color={color} />,
           headerRight: () => (
             <Pressable
               onPress={() => navigation.navigate('Modal')}
@@ -94,7 +95,7 @@ function BottomTabNavigator() {
         component={DataBase}
         options={{
           title: 'DataBase',
-          tabBarIcon: ({ color }) => <Ionicons size={24} name="color-palette" color={color} />,
+          tabBarIcon: ({ color }) => <Entypo name="database" size={24} color={color} />,
         }}
       />
     </BottomTab.Navigator>
