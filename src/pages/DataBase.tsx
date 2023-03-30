@@ -2,6 +2,7 @@ import { StyleSheet } from 'react-native';
 import { Button, SectionList, Flex, Box, Link, Pressable, Input, Text, View } from 'native-base';
 import { example } from '../database/createTable';
 import React, { useState, useEffect } from 'react';
+import * as FileSystem from 'expo-file-system';
 import type { Example } from '../database/createTable';
 
 function setAllData(setLists: any) {
@@ -13,11 +14,17 @@ function setAllData(setLists: any) {
 }
 
 export default function DataBase() {
+  const [dbUrl, setDbUrl] = useState('');
   const [list, setList] = useState([]);
 
   const [listId, setListId] = useState('');
 
   const [str, setStr] = useState('');
+  const url = FileSystem.documentDirectory;
+  FileSystem.readDirectoryAsync(`${url}/SQLite`).then((res) => {
+    console.log(res);
+    // setDbUrl();
+  });
   useEffect(() => {
     setAllData(setList);
   }, []);
@@ -30,6 +37,8 @@ export default function DataBase() {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>DataBase example</Text>
+
+      <Text>DataBase url: {`${url}/SQLite`}</Text>
       <Button
         shadow={2}
         onPress={() => {
